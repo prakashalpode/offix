@@ -1,0 +1,400 @@
+.woocommerce-order-received {
+  background: #F4F4F4;
+}
+
+.thankyou-container {
+  padding: rem-calc(20px 12px);
+  margin: 0 auto;
+
+  @include media-breakpoint-up(md) {
+    padding: 35px 30px;
+    max-width: 875px;
+    margin: 0 auto;
+  }
+
+  .thankyou-header {
+    background: #fff;
+    margin: 0 0 rem-calc(20px);
+    padding: rem-calc(14px) 0 0;
+
+    @include media-breakpoint-up(md)  {
+      margin-bottom: 14px;
+      padding-top: 20px;
+    }
+  }
+
+  .order-products-row,
+  .order-detail-box {
+    display: none !important;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: rem-calc(17px);
+    line-height: 1.47058824;
+    text-align: center;
+    margin: 0 rem-calc(14px 5px);
+
+    @include media-breakpoint-up(md) {
+      font-size: 21px;
+      line-height: 1.25;
+      margin-bottom: 2px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+    }
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: rem-calc(13px);
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 rem-calc(10px 15px);
+
+    @include media-breakpoint-up(md) {
+      font-size: 14px;
+      margin-bottom: 17px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 16px;
+    }
+  }
+
+  .thankyou-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: ltr;
+    height: rem-calc(25px);
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+    font-size: rem-calc(13px);
+
+    @include media-breakpoint-up(md) {
+      height: 32px;
+      font-size: 15px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 40px;
+      font-size: 16px;
+    }
+
+    .icon-heart,
+    .icon-bookmark {
+      font-size: rem-calc(14.5px);
+      margin-right: rem-calc(8px);
+
+      @include media-breakpoint-up(md) {
+        margin-right: 10px;
+        font-size: 1.375em;
+      }
+    }
+  }
+
+  .payment-info {
+    background: #fff;
+    margin: 0 0 rem-calc(20px);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 11px;
+      padding: 0 20px;
+    }
+
+    .payment-header {
+      border-bottom: 1px solid #E1E1E1;
+      display: flex;
+      align-items: baseline;
+      padding: rem-calc(10px 10px 9px);
+
+      @include media-breakpoint-up(md) {
+        padding: 14px 0;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 18px 0;
+      }
+    }
+
+    .payment-title {
+      display: block;
+      font-size: rem-calc(12px);
+      line-height: 1.5;
+      font-weight: 500;
+      color: #000000;
+
+      @include media-breakpoint-up(md) {
+        font-size: 15px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 18px;
+      }
+    }
+
+    .card-info {
+      font-size: rem-calc(12px);
+      line-height: 1.5;
+      display: flex;
+      margin-right: auto;
+
+      @include media-breakpoint-up(md) {
+        font-size: 14px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 16px;
+      }
+
+      .card-type {
+        margin-right: rem-calc(13px);
+      }
+    }
+
+    .order-info {
+      font-size: rem-calc(12px);
+      line-height: 1.5;
+      padding: rem-calc(3px 10px) 0;
+
+      @include media-breakpoint-up(md) {
+        font-size: 14px;
+        padding: 10px 2px 16px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 16px;
+      }
+
+      .info-row {
+        padding: rem-calc(6px) 0;
+      }
+
+      .info-title {
+        font-weight: 500;
+        color: #727272;
+        display: inline-flex;
+        align-items: baseline;
+        margin-left: rem-calc(4px);
+
+        @include media-breakpoint-up(md) {
+          margin-left: 10px;
+        }
+
+        i {
+          width: rem-calc(18px);
+          color: #000;
+          margin-left: rem-calc(5px);
+
+          @include media-breakpoint-up(md) {
+            width: 25px;
+            margin-left: 8px;
+          }
+        }
+      }
+
+      .icon-package {
+        font-size: rem-calc(10.5px);
+
+        @include media-breakpoint-up(md) {
+          font-size: 14px;
+        }
+      }
+
+      .icon-interface {
+        font-size: rem-calc(15.5px);
+
+        @include media-breakpoint-up(md) {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+
+  .product-info {
+    background: #fff;
+    margin: 0 0 rem-calc(20px);
+    padding: rem-calc(10px 0 7px);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 12px;
+      padding: 18px 20px 8px;
+    }
+
+    .order-product-title {
+      display: block;
+      font-size: rem-calc(12px);
+      line-height: 1.5;
+      font-weight: 500;
+      color: #000000;
+      margin: 0 rem-calc(10px);
+
+      @include media-breakpoint-up(md) {
+        font-size: 15px;
+        margin: 0;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 18px;
+      }
+    }
+
+    table {
+      width: 100%;
+      font-size: rem-calc(11px);
+      line-height: 1.45454545;
+
+      @include media-breakpoint-up(md) {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 16px;
+      }
+
+      thead {
+        font-size: rem-calc(12px);
+        line-height: 1.5;
+        color: #848484;
+
+        @include media-breakpoint-up(md) {
+          font-size: 14px;
+        }
+
+        th,
+        td {
+          border: none;
+          padding: rem-calc(9px 10px);
+
+          @include media-breakpoint-up(md) {
+            padding: 12px 0 8px;
+
+            &:first-child {
+              width: 52%;
+            }
+
+            &:nth-child(2) {
+              width: 24%;
+            }
+
+            // &:nth-child(3) {
+            //   width: 31%;
+            // }
+          }
+        }
+
+        th {
+          font-weight: 400;
+        }
+      }
+
+      tbody {
+        td,
+        th {
+          border-top: 1px solid #E1E1E1;
+          padding: rem-calc(10px);
+
+          @include media-breakpoint-up(md) {
+            padding: 9px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .order-amount-info {
+    background: #fff;
+    margin: 0 0 rem-calc(20px);
+    padding: rem-calc(5px 10px);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 12px;
+      padding: 14px 20px 15px;
+    }
+
+    table {
+      font-size: rem-calc(12px);
+      line-height: 1.5;
+      width: 100%;
+
+      @include media-breakpoint-up(md) {
+        font-size: 14px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 16px;
+      }
+
+      th,
+      td {
+        font-weight: 500;
+        border: none;
+        padding: rem-calc(5px) 0;
+
+        &:last-child {
+          text-align: left;
+        }
+      }
+    }
+  }
+  .shoes-bank-details{
+    background: #FFF;
+    text-align: center;
+    padding: rem-calc(15px);
+    margin-top: rem-calc(20px);
+    
+    @include media-breakpoint-up(md) {
+      padding: rem-calc(30px);
+      margin-top: rem-calc(20px);
+    }
+  }
+
+  .order-address-info {
+    background: #fff;
+    margin: 0 0 rem-calc(20px);
+    font-size: rem-calc(12px);
+    line-height: 1.5;
+    padding: rem-calc(10px 10px 13px);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 21px;
+      padding: 18px 20px 17px;
+      font-size: 14px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 16px;
+      line-height: 1.6875;
+    }
+
+    .address-title {
+      display: block;
+      font-size: rem-calc(12px);
+      line-height: 1.5;
+      font-weight: 500;
+      color: #000000;
+      margin: 0 0 rem-calc(10px);
+
+      @include media-breakpoint-up(md) {
+        font-size: 15px;
+        margin-bottom: 11px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .btn-back {
+    display: block;
+    margin: 0 auto;
+    max-width: rem-calc(262px);
+    font-size: rem-calc(14px);
+    line-height: 1.5;
+  }
+}

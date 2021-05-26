@@ -1,0 +1,569 @@
+#footer {
+  background: #F6F6F6;
+  font-size: rem-calc(11px);
+  line-height: rem-calc(16px);
+  padding: rem-calc(20px 12px);
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: rem-calc(40px);
+  }
+  @include media-breakpoint-up(md) {
+    padding: 30px 20px 2px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 40px 30px 4px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 50px 40px 6px;
+    font-size: 14px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    padding: 59px 50px 6px;
+  }
+
+  .home & {
+    margin-top: rem-calc(22px);
+  }
+
+  .design-dev-info {
+    padding: rem-calc(11px) 0 0;
+
+    @include media-breakpoint-up(md) {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 0;
+      flex-basis: 190px;
+      max-width: 190px;
+    }
+
+    a {
+      color: inherit;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      text-decoration: none;
+      justify-content: center;
+      line-height: 1;
+
+      .rtl & {
+        flex-direction: row-reverse;
+      }
+
+      &:hover {
+        opacity:  0.6;
+      }
+
+      img {
+        width: 1.5em;
+        height: auto;
+        margin: 0 0.3125em;
+      }
+    }
+  }
+  .single-product &{
+    @include media-breakpoint-down(sm) {
+      padding-bottom: rem-calc(80px);
+    }
+  }
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 29px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 39px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 49px;
+  }
+
+  .footer-title {
+    display: block;
+    font-size: rem-calc(12px);
+    line-height: 1.25;
+    font-weight: 400;
+    margin: 0 0 rem-calc(5px);
+
+    @include media-breakpoint-up(md) {
+      font-size: 14px;
+      padding-top: 1px;
+      margin-bottom: 9px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 16px;
+      padding-top: 2px;
+      margin-bottom: 13px;
+    }
+  }
+
+  .footer-nav {
+    flex-basis: 100%;
+    max-width: 100%;
+    z-index: 0;
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+
+    @include media-breakpoint-up(md) {
+      order: -5;
+      flex-basis: 30%;
+      max-width: 30%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      flex-basis: 19.6%;
+      max-width: 19.6%;
+    }
+
+    ul {
+
+      >li {
+        padding: 0 0 rem-calc(12px);
+
+        @include media-breakpoint-up(lg) {
+          padding-bottom: 13px;
+        }
+
+        >a {
+          color: #000;
+          text-decoration: none;
+
+          @include media-breakpoint-up(md) {
+            position: relative;
+
+            &:after {
+              content: '';
+              position: absolute;
+              bottom: -3px;
+              height: 1px;
+              right: 0;
+              width: 100%;
+              background: #000;
+              transition: 0.4s ease opacity, 0.4s ease transform;
+              opacity: 0;
+              transform: scaleX(0);
+              transform-origin: 0 0;
+            }
+
+            &:hover {
+              &:after {
+                opacity: 1;
+                transform: scaleX(1);
+                transform-origin: 100% 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-gift-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 0 0 rem-calc(26px);
+
+    @include media-breakpoint-up(md) {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 7px;
+      flex-basis: 20%;
+      max-width: 20%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      flex-basis: 11%;
+      max-width: 11%;
+      padding-top: 10px;
+    }
+
+    .gift-title {
+      font-size: rem-calc(11px);
+      font-weight: 400;
+      display: block;
+
+      @include media-breakpoint-up(md) {
+        font-size: 14px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 16px;
+      }
+    }
+
+    .icon-gift-card {
+      font-size: rem-calc(11.5px);
+      margin: 0 0 0 rem-calc(6.5px);
+
+      @include media-breakpoint-up(md) {
+        font-size: 26px;
+        margin: 0 0 6px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 28px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        font-size: 32px;
+      }
+    }
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .social-networks {
+    justify-content: center;
+    // padding: rem-calc(26px) 0;
+    padding: rem-calc(20px) 0;
+
+    @include media-breakpoint-up(lg) {
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+      // padding: 36px 5px 0;
+      padding: 24px 5px 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      // padding-top: 46px;
+      padding-top: 32px;
+    }
+
+    li {
+      padding: 0 rem-calc(11px);
+
+      @include media-breakpoint-up(md) {
+        padding: 0 15px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 0 0 0 18px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        padding-left: 22px;
+      }
+
+      @include media-breakpoint-down(md) {
+        display: flex;
+        justify-content: center;
+        width: 54px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: rem-calc(42px);
+      }
+    }
+  }
+
+  .newsletter-col {
+    flex-basis: 100%;
+
+    @include media-breakpoint-up(md) {
+      order: -6;
+    }
+
+    @include media-breakpoint-up(lg) {
+      order: 15;
+      flex-basis: 26.1%;
+      max-width: 281px;
+      margin-right: auto;
+    }
+  }
+}
+
+.footer-newsletter-box {
+  max-width: rem-calc(225px);
+  margin: 0 auto;
+
+  @include media-breakpoint-up(md) {
+    max-width: 350px;
+  }
+
+  @include media-breakpoint-up(lg) {
+  }
+
+  .newsletter-title {
+    display: block;
+    font-size: rem-calc(14px);
+    line-height: 1.46428571;
+    margin: 0 0 rem-calc(-3px);
+    font-weight: 400;
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: -1px 0 9px;
+    }
+  }
+
+  form {
+    br {
+      display: none;
+    }
+  }
+
+  .input-wrap {
+    position: relative;
+
+    .form-control {
+      box-shadow: none;
+      border-radius: 0;
+      border-width: 0 0 1px;
+      border-color: #000;
+      color: #000;
+      font-size: rem-calc(13px);
+      background: none;
+      padding: rem-calc(7px) 0;
+      height: rem-calc(32px);
+      line-height: rem-calc(17px);
+
+      @include media-breakpoint-up(md) {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 6px 0;
+      }
+
+      @include placeholder {
+        color: #000;
+      }
+    }
+
+    .btn-send {
+      border: none;
+      outline: none;
+      padding: 0;
+      margin: 0;
+      background: none;
+      outline: none;
+      line-height: 1;
+      font-size: rem-calc(8.5px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: rem-calc(32px);
+
+      @include media-breakpoint-up(md) {
+        font-size: 11px;
+      }
+
+      &:hover {
+        i {
+          transform: scale(1.1);
+        }
+      }
+
+      i {
+        display: block;
+        transition: 0.25s ease transform;
+      }
+    }
+  }
+}
+
+.store-info,
+.footer-contact-info {
+  padding-right: rem-calc(32px);
+  margin-bottom: rem-calc(27px);
+  line-height: 19px;
+
+  @include media-breakpoint-up(md) {
+    line-height: 24px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    line-height: 28px;
+  }
+
+  @include media-breakpoint-down(md) {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+.store-info {
+    @include media-breakpoint-down(sm) {
+      border-left: 1px solid #000;
+    }
+
+    @include media-breakpoint-up(lg) {
+      flex-basis: 23.7%;
+      max-width: 23.7%;
+    }
+}
+
+.footer-contact-info {
+
+  @include media-breakpoint-up(lg) {
+    flex-basis: 19.6%;
+    max-width: 19.6%;
+  }
+
+  ul {
+    li {
+      @include media-breakpoint-up(md) {
+        padding: 0 0 5px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        padding-bottom: 7px;
+      }
+    }
+  }
+}
+
+.social-networks {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  font-size: rem-calc(15px);
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 18px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 20px;
+  }
+
+  >li {
+    a {
+      text-decoration: none;
+      display: block;
+      color: #000;
+
+      &:hover {
+        i {
+          transform: scale(1.1);
+        }
+      }
+
+      i {
+        display: block;
+        transition: 0.25s ease transform;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  @include media-breakpoint-up(md) {
+    border-top: 1px solid #D1D1D1;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 8px;
+    flex-wrap: wrap;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 12px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 14px;
+  }
+
+  .footer-link {
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-down(sm) {
+      border: 1px solid #000;
+      border-width: 1px 0;
+      padding: rem-calc(7px) 0;
+      margin: 0 0 rem-calc(11px);
+    }
+
+    @include media-breakpoint-up(lg) {
+      flex-basis: calc(50% - 95px);
+      max-width: calc(50% - 95px);
+      justify-content: flex-start;
+    }
+
+    >li {
+
+      + li {
+        &:before {
+          content: '|';
+          padding: 0 rem-calc(7px);
+
+          @include media-breakpoint-up(xl) {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+
+  .footer-icon {
+    width: rem-calc(244px);
+    margin: 0 auto;
+
+    @include media-breakpoint-up(md) {
+      margin-left: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 260px;
+      order: 5;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 287px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.toast {
+  min-width: 200px;
+
+  button.close {
+    font-size: 13px;
+  }
+}
