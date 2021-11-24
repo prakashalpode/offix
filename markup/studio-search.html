@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="he-IL">
+<head>
+  <!-- set the encoding of your site -->
+  <meta charset="utf-8">
+  <!-- set the viewport width and initial-scale on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offix Studio</title>
+  <!-- include the site stylesheet -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="studio-search">
+  <!-- no script styles for webaccessibility -->
+  <noscript>
+    <div>Javascript must be enabled for the correct page display</div>
+  </noscript>
+  <!-- allow a user to go to the main content of the page -->
+  <a class="sr-only sr-only-focusable" href="#main" accesskey="m">Skip to Content</a>
+  <a class="sr-only sr-only-focusable" href="#" accesskey="c">Contact Us</a>
+  <!-- main container of all the page elements -->
+  <div id="wrapper">
+    <!-- header of the page -->
+    <header id="header">
+      <div class="header-offer-bar">
+        <div class="container">
+          <div class="offer-slider">
+            <div class="slide">
+                <div class="header-offer-text">An important message will be <a href="#">written here</a></div>
+            </div>
+            <div class="slide">
+                <div class="header-offer-text">An important message will be <a href="#">written here</a></div>
+            </div>
+            <div class="slide">
+                <div class="header-offer-text">An important message will be <a href="#">written here</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-top">
+        <div class="container-wide">
+          <div class="header-top-wrap">
+            <button type="button" class="btn nav-opener nav_control d-xl-none" aria-label="Menu">
+              <span class="nav-bar"></span>
+              <span class="nav-bar"></span>
+              <span class="nav-bar"></span>
+            </button>
+            <div class="logo">
+              <a href="#">
+                <span class="desktop-logo d-none d-xl-block">
+                  <img src="assets/images/logo.svg" alt="Offix Studio">
+                </span>
+                <span class="mobile-logo d-xl-none">
+                  <img src="assets/images/logo-flat.svg" alt="Offix Studio">
+                </span>
+              </a>
+            </div>
+            <nav id="nav">
+              <ul class="primary-menu">
+                <li class="menu-item-has-children">
+                  <a href="#">
+                    Our Locations
+                  </a>
+                  <ul class="sub-menu">
+                    <li class="menu-item-has-children">
+                      <a href="#">State 1</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Location 1</a></li>
+                        <li><a href="#">Location 2</a></li>
+                        <li><a href="#">Location 3</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#">State 2</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Location 1</a></li>
+                        <li><a href="#">Location 2</a></li>
+                        <li><a href="#">Location 3</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#">State 3</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Location 1</a></li>
+                        <li><a href="#">Location 2</a></li>
+                        <li><a href="#">Location 3</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">Own Your Workspace</a></li>
+                <li><a href="#">Find a Proffesional</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+              <ul class="social-networks d-xl-none">
+                <li>
+                  <a href="#">
+                    <i class="icon-whatsapp"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="search-btn-main">
+              <form class="header-search">
+                <div class="input-wrap">
+                  <input type="search" class="search-input" name="s" id="header_search_input" placeholder="Search Service">
+                  <div class="line-animt"></div>
+                  <button class="btn btn-search" type="submit"><i class="icon-search" aria-hidden="true"></i></button>
+                </div>
+              </form>
+            </div>
+            <div class="rent-btn-main">
+              <a href="#" class="btn primary-btn rent-workplace-btn">Rent workspace</a>
+            </div>
+            <div class="call-btn-main d-xl-none">
+              <a href="tel:312.312.3333"><i class="icon-phone"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="header-btns-wrap d-xl-none">
+          <div class="header-btn-single">
+            <a href="#" class="btn primary-btn rent-workplace-btn">Rent workspace</a>
+          </div>
+          <div class="header-btn-single">
+            <form class="header-search">
+              <div class="input-wrap">
+                <input type="search" class="search-input" name="s" id="header_search_input" placeholder="Search Service">
+                <div class="line-animt"></div>
+                <button class="btn btn-search" type="submit"><i class="icon-search" aria-hidden="true"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main informative part of the page -->
+    <main id="main">
+      <div class="find-form-wrap">
+        <div class="find-form-wrap-inner d-none d-md-block">
+          <h2 class="section-title">Find Your <strong>Studio:</strong></h2>
+          <form class="custom-form">
+            <div class="form-row">
+              <div class="form-group">
+                <div class="select-wrap">
+                  <label class="select-title">Select State:</label>
+                  <select id="select-location">
+                    <option value="1">State</option>
+                    <option value="2">State 1</option>
+                    <option value="3">State 2</option>
+                    <option value="3">State 3</option>
+                    <option value="3">State 4</option>
+                    <option value="3">State 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="select-wrap">
+                  <label class="select-title">Find Location:</label>
+                  <select id="select-location">
+                    <option value="1">Location</option>
+                    <option value="2">Location 1</option>
+                    <option value="3">Location 2</option>
+                    <option value="3">Location 3</option>
+                    <option value="3">Location 4</option>
+                    <option value="3">Location 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="select-wrap">
+                  <label class="select-title">Select Studio Size:</label>
+                  <select id="select-location">
+                    <option value="1">Select Size</option>
+                    <option value="2">Select Size 1</option>
+                    <option value="3">Select Size 2</option>
+                    <option value="3">Select Size 3</option>
+                    <option value="3">Select Size 4</option>
+                    <option value="3">Select Size 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="select-wrap">
+                  <label class="select-title">Your Proffesional</label>
+                  <select id="select-location">
+                    <option value="1">Specialization</option>
+                    <option value="2">Specialization 1</option>
+                    <option value="3">Specialization 2</option>
+                    <option value="3">Specialization 3</option>
+                    <option value="3">Specialization 4</option>
+                    <option value="3">Specialization 5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-btn-wrap">
+                <button class="btn primary-btn btn-contact" type="submit">Find A Studio</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="search-count-wrap">
+          <div class="d-md-none">
+            <a href="#" class="search-again-txt"><i class="icon-left-arrow-thick"></i> Search Again</a>
+          </div>
+          <span class="srch-txt-count">4 Results were found</span>
+        </div>
+      </div>
+
+      <div class="studio-search-main">
+        <div class="studio-search-wrap">
+          <div class="studio-srch-single">
+            <div class="studio-srch-single-inner">
+              <div class="std-search-dtl">
+                <div class="std-srch-title">Studio Pilsen</div>
+                <div class="std-srch-sub-title">P917 W 18th St. Chicago, IL 6060</div>
+                <div class="std-srch-para">information about the studio Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</div>
+                <div class="std-srch-phone-btn d-md-none">
+                  <a href="#"><i class="icon-phone"></i> <span>Schedule a phone call</span></a>
+                </div>
+              </div>
+              <div class="std-srch-image-wrap">
+                <div class="std-srch-slider">
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                </div>
+              </div>
+              <div class="std-srch-btn-wraps">
+                <a href="#" class="btn primary-btn std-srch-btn-1">More Info</a>
+                <a href="#" class="btn white-btn std-srch-btn-2">Book A Tour</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="studio-srch-single">
+            <div class="studio-srch-single-inner">
+              <div class="std-search-dtl">
+                <div class="std-srch-title">Studio Pilsen</div>
+                <div class="std-srch-sub-title">P917 W 18th St. Chicago, IL 6060</div>
+                <div class="std-srch-para">information about the studio Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</div>
+                <div class="std-srch-phone-btn d-md-none">
+                  <a href="#"><i class="icon-phone"></i> Schedule a phone call</a>
+                </div>
+              </div>
+              <div class="std-srch-image-wrap">
+                <div class="std-srch-slider">
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                </div>
+              </div>
+              <div class="std-srch-btn-wraps">
+                <a href="#" class="btn primary-btn std-srch-btn-1">More Info</a>
+                <a href="#" class="btn white-btn std-srch-btn-2">Book A Tour</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="studio-srch-single">
+            <div class="studio-srch-single-inner">
+              <div class="std-search-dtl">
+                <div class="std-srch-title">Studio Pilsen</div>
+                <div class="std-srch-sub-title">P917 W 18th St. Chicago, IL 6060</div>
+                <div class="std-srch-para">information about the studio Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</div>
+                <div class="std-srch-phone-btn d-md-none">
+                  <a href="#"><i class="icon-phone"></i> Schedule a phone call</a>
+                </div>
+              </div>
+              <div class="std-srch-image-wrap">
+                <div class="std-srch-slider">
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                </div>
+              </div>
+              <div class="std-srch-btn-wraps">
+                <a href="#" class="btn primary-btn std-srch-btn-1">More Info</a>
+                <a href="#" class="btn white-btn std-srch-btn-2">Book A Tour</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="studio-srch-single">
+            <div class="studio-srch-single-inner">
+              <div class="std-search-dtl">
+                <div class="std-srch-title">Studio Pilsen</div>
+                <div class="std-srch-sub-title">P917 W 18th St. Chicago, IL 6060</div>
+                <div class="std-srch-para">information about the studio Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</div>
+                <div class="std-srch-phone-btn d-md-none">
+                  <a href="#"><i class="icon-phone"></i> Schedule a phone call</a>
+                </div>
+              </div>
+              <div class="std-srch-image-wrap">
+                <div class="std-srch-slider">
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                  <div class="std-srch-sigle">
+                    <img src="assets/images/search-result-img.png" alt="image">
+                  </div>
+                </div>
+              </div>
+              <div class="std-srch-btn-wraps">
+                <a href="#" class="btn primary-btn std-srch-btn-1">More Info</a>
+                <a href="#" class="btn white-btn std-srch-btn-2">Book A Tour</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <nav class="woocommerce-pagination">
+          <ul class="page-numbers">
+            <li><a class="prev page-number" href="#"><i class="icon-left-half-arrow"></i></a></li>
+            <li><a class="page-number" href="#">1</a></li>
+            <li><span aria-current="page" class="page-number current">2</span></li>
+            <li><a class="page-number" href="#">3</a></li>
+            <li><a class="next page-number" href="#"><i class="icon-right-half-arrow"></i></a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </main>
+    <!-- footer of the page -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="footer-sec store-info">
+          <div class="logo-wrap">
+            <img src="assets/images/logo-flat.svg" alt="Offix Studio">
+          </div>
+          <div class="desc-text">
+            Space, amenities, and community designed to help take your business to the next level.
+          </div>
+          <div class="footer-btn-wrap">
+            <a href="#" class="btn footer-studio-btn white-btn">Rent a Studio</a>
+            <a href="#" class="btn footer-saloon-btn primary-btn">Find a Salon</a>
+          </div>
+        </div>
+        <div class="footer-sec footer-contact-info">
+          <strong class="footer-title">Contact Us</strong>
+          <ul class="info-list">
+            <li>
+              <a href="mailto:Office@offix-usa.com">Office@offix-usa.com</a>
+            </li>
+            <li>
+              <a href="tel:312.312.3333">312.312.3333</a>
+            </li>
+            <li>
+              1200 N Ashland Ave,<br/> 60622, Chicago IL
+            </li>
+          </ul>
+        </div>
+        <nav class="footer-sec footer-nav">
+          <strong class="footer-title">Locations</strong>
+          <ul>
+            <li><a href="#">Pilsen</a></li>
+            <li><a href="#">Pilsen</a></li>
+            <li><a href="#">Pilsen</a></li>
+            <li><a href="#">Pilsen</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-sec footer-nav footer-nav-2">
+          <strong class="footer-title">Information</strong>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Brokers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
+        <div class="footer-sec newsletter-col">
+          <div class="footer-newsletter-box">
+            <strong class="newsletter-title">Sign up to our newsletter and stay up to date (:</strong>
+            <form action="#">
+              <div class="input-wrap">
+                <input type="email" class="form-control" placeholder="Your Email">
+                <button class="btn btn-send" type="submit"><i class="icon-right-arrow-long"></i></button>
+              </div>
+            </form>
+            <ul class="footer-social-networks">
+              <li>
+                <a href="#">
+                  <i class="icon-whatsapp"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icon-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icon-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-text-wrap">
+          <div class="footer-text-inner">
+            Created by <a href="#">Matat</a>
+          </div>
+        </div>
+        <div class="footer-text-wrap">
+          <div class="footer-text-inner">
+            © Offix usa, 2019. All rights reserved.
+          </div>
+        </div>
+        <div class="mobile-only-text-wrap d-md-none"><img src="assets/images/matat-logo.svg" alt="Matat Technologies Ltd">Developed by <a href="#">Matat Technologies ltd</a></div>
+      </div>
+    </footer>
+  </div>
+  <span class="backdrop-overlay"></span>
+  <!-- allow a user to go to the top of the page -->
+  <a class="sr-only sr-only-focusable" href="#wrapper" accesskey="h">Back top top</a>
+  <!-- include jQuery library -->
+  <script src="assets/js/jquery-1.12.4.min.js"></script>
+  <!-- Latest compiled and minified Bootstrap JavaScript -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <!-- include custom JavaScript -->
+  <script src="assets/js/jquery.main.js"></script>
+  <!-- include matat JavaScript -->
+  <script src="assets/js/matat.js"></script>
+</body>
+</html>
