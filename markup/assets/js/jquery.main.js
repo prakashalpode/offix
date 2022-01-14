@@ -471,7 +471,7 @@ function initSlickCarousel() {
     autoplaySpeed: 3000,
     infinite: true
   });
-  jQuery('.testi-slider-main').slick({
+  jQuery('.testimonial-inner').slick({
     rtl: rtlDir(),
     slidesToScroll: 1,
     // slidesToShow: 6,
